@@ -195,7 +195,7 @@ video {
     flex: 1 1 300px;
     padding: 2vh; 
     transition: transform 0.3s ease-in-out;
-    background-color: #5a5959;
+  
 }
 
 .botao__assinar:hover{
