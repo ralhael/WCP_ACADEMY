@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@700&family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@700&family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+
+h1, h2, h3, .botao__assinar {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nivel-basico, .nivel-intermediario, .nivel-avancado {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+body, p, li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+body{
+     margin: 0;
+     padding: 0;
+     font-family: "Poppins", sans-serif;
+     background:linear-gradient(to bottom, #979797, #746e6e, #3c3c3f);
+
+     
+     
+}
+
+
+
+
+
+
+/*header começa aqui*/
+
+.engloba{
+    background-image: url("../assets/fundoBasic.png"); /* caminho da imagem */
+    background-size: cover;      /* cobre todo o espaço */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat;/* impede repetição */
+    background-attachment: fixed;
+    border-radius: 2vh;
+    box-shadow: 0 0 20px rgba(77, 77, 77, 0.267) ;
+
+
+}
+
+
+
+
+
+.paginainterna{
+    
+  
+   
+     position: relative; /* cria um contexto */
+   
+     
+    
+     
+    
+}
+
+
+
+.video-fundo {
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* cobre toda a div sem distorcer */
+       /* fica atrás do conteúdo */
+  opacity: 0.7;      /* deixa o vídeo mais "transparente" */
+  margin: 0;
+  z-index: -1;
+}
+
+
+.nivel{
+    padding-right:3vh;
+    padding-left:3vh;
+    background:linear-gradient(to top ,#746e6e, #1d1b1b  );
+    border-radius: 1vh;
+    color:white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    font-size: 3vh;
+    
+}
+
+#titulo{
+    text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.7);
+    font-size: 5vh;
+    margin: 0;
+    padding-bottom: 2rem;
+    line-height: 8vh;
+    font-size: 7vh;
+}
+
+.subtexto{
+    font-size: 3vh;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:5rem
+    
+}
+
+video {
+  width: 85%;          
+  border-radius: 10px;   
+  margin-top: 10px;   
+  box-shadow: 0 10px 8px 8px rgba(0, 0, 0, 0.5);  
+   
+}
+
+
+/*main começa aqui*/
+
+.div__conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    padding-top:8vh;
+    
+
+}
+
+#conteudo__introducao{
+    width: 110vh;
+    text-align: center;
+    padding-bottom: 10vh;
+    text-shadow: 4px 4px 5px rgba(255, 255, 255, 0.7);
+}
+
+.div__organiza__blocos{
+    display: flex;
+    flex-wrap: wrap;        /* quebra linha quando não couber */
+    justify-content: center; /* centraliza os blocos */
+    gap: 15vh;              /* espaço entre eles */
+    margin: 20px 0;
+}
+
+
+.div__conteudinhos {
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    flex: 1 1 300px;    /* mínimo 300px e cresce conforme espaço */
+    max-width: 400px;   /* limite da largura */
+    transition: transform ease 0.3s;
+}
+
+.div__conteudinhos:hover{
+    transform: scale(1.2);
+}
+
+#textosCentralizados{
+    text-align: center;
+    text-shadow: 4px 4px 5px rgba(104, 101, 101, 0.7);
+}
+
+.div__botao{
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+    transition:transform 0.3s ease-in-out;
+
+}
+
+
+.botao__assinar{
+    border-radius: 10px;
+     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    flex: 1 1 300px;
+    padding: 2vh;
+    transition: transform 0.3s ease-in-out;
+    
+    
+}
+
+.botao__assinar:hover{
+    transform: scale(1.5);
+
+}
+
+
+
+
+
+#assinar{
+    color: white;
+    text-decoration:none;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
