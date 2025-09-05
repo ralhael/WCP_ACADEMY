@@ -14,6 +14,7 @@
 
 
 
+
 html, body {
   overflow-x: hidden;
 }
@@ -88,6 +89,10 @@ header{
 
 
 
+
+strong{
+    color: rgb(0, 0, 0);
+}
 
 /* Cabeçalho Começa aq */  
 
@@ -198,26 +203,36 @@ header{
 
 .titulo{
     font-size: 6vh;
+    text-shadow: 5px 5px 5px rgb(6, 24, 185);
+    color: rgb(201, 202, 214);
+    
     
 
 }
 
 .texto__um{
+    color: aliceblue;
     font-size: 2.5vh;
     width: 120vh;
+    text-shadow:  2px 2px 5px rgb(75, 72, 72);
+
 
 }
 
 .texto__dois{
+    color: aliceblue;
     font-size: 2.5vh;
     width: 120vh;
+    text-shadow:  2px 2px 5px rgb(75, 72, 72);
 
 }
 
 .texto__tres{
+    color: aliceblue;
     font-size: 2.5vh;
     width: 120vh;
     padding-bottom: 5vh;
+    text-shadow:  2px 2px 5px rgb(75, 72, 72);
 
 }
 
@@ -225,10 +240,14 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(27, 27, 27);
+    background: linear-gradient(192deg , rgb(10, 22, 129), rgb(0, 0, 0),rgb(4, 13, 95));
+   animation: moverGradient 10s ease
+   infinite;
+    background-size: 300% 300%;    
     width: 170vh;
     border-radius: 3vh ;
     padding-bottom: 5vh;
+    box-shadow: 0 0 18px rgb(4, 2, 112);
     
     
 }
@@ -236,18 +255,42 @@ header{
 
 .bloco__pequeno{
 
-    background-color: #616165;
+    background: linear-gradient(132deg , rgb(10, 22, 129), rgb(0, 0, 0),rgb(7, 19, 128));
+    background-size: 300% 300%;
+    animation: moverGradient 10s ease infinite;
     width: 100vh;
     border-radius:3vh;
     padding-bottom: 5vh;
+    box-shadow: 0 0 10px rgb(241, 241, 241);
     
 }
 
 .subtitulo{
-    font-size:4.5vh
+    color: aliceblue;
+    font-size:4.5vh;
+    text-shadow:  2px 2px 5px rgb(75, 72, 72);
+}
+
+.textinho__um{
+color: aliceblue;
+
+}
+
+.textinho__dois{
+color: aliceblue;
+    
 }
 
 
+.textinho__tres{
+
+    color: aliceblue;
+}
+
+.textinho__quatro{
+
+    color: aliceblue;
+}
 /*Rodape começa aqui*/
 
 .rodape{
