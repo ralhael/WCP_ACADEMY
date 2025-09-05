@@ -21,7 +21,7 @@ html, body {
 
 
 h1, h2, h3, .botao__assinar {
-  font-family: 'Oswald', sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -91,7 +91,7 @@ header{
 
 
 strong{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 /* Cabeçalho Começa aq */  
@@ -116,7 +116,7 @@ strong{
     align-items: center;
     border: 1px solid transparent;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0.4, 0.4, 0.4, 0.5);
+    box-shadow: 0 0 18px rgb(58, 58, 58);
     
     
 }
@@ -129,6 +129,7 @@ strong{
     width: 70vh;
    margin: 20px;
     text-align: center;
+    padding-left: 2.8vh;
     
     
 }
@@ -146,7 +147,7 @@ strong{
 }
 
 .cabecalho_conteudo_links:hover{
-    color: #0f8da3;
+    color: #79797e;
     transform: scale(1.10);
     text-shadow: 2px 2px 5px rgb(76, 88, 92); 
 }
@@ -203,7 +204,7 @@ strong{
 
 .titulo{
     font-size: 6vh;
-    text-shadow: 5px 5px 5px rgb(6, 24, 185);
+    text-shadow: 5px 5px 5px rgb(15, 25, 128);
     color: rgb(201, 202, 214);
     
     
@@ -211,7 +212,7 @@ strong{
 }
 
 .texto__um{
-    color: aliceblue;
+    color: rgb(149, 149, 150);
     font-size: 2.5vh;
     width: 120vh;
     text-shadow:  2px 2px 5px rgb(75, 72, 72);
@@ -220,7 +221,7 @@ strong{
 }
 
 .texto__dois{
-    color: aliceblue;
+    color: rgb(149, 149, 150);
     font-size: 2.5vh;
     width: 120vh;
     text-shadow:  2px 2px 5px rgb(75, 72, 72);
@@ -228,7 +229,7 @@ strong{
 }
 
 .texto__tres{
-    color: aliceblue;
+    color: rgb(149, 149, 150);
     font-size: 2.5vh;
     width: 120vh;
     padding-bottom: 5vh;
@@ -247,7 +248,7 @@ strong{
     width: 170vh;
     border-radius: 3vh ;
     padding-bottom: 5vh;
-    box-shadow: 0 0 18px rgb(4, 2, 112);
+    box-shadow: 0 0 18px rgb(87, 87, 87);
     
     
 }
@@ -272,24 +273,27 @@ strong{
 }
 
 .textinho__um{
-color: aliceblue;
+color: rgb(149, 149, 150);
 
 }
 
 .textinho__dois{
-color: aliceblue;
+color: rgb(149, 149, 150);
     
 }
 
+span{
+    color:white
+}
 
 .textinho__tres{
 
-    color: aliceblue;
+   color: rgb(149, 149, 150);
 }
 
 .textinho__quatro{
 
-    color: aliceblue;
+   color: rgb(149, 149, 150);
 }
 /*Rodape começa aqui*/
 
