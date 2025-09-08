@@ -219,4 +219,14 @@ a{
     text-decoration: none;
 }
 
+.voltar{
+    margin: 1rem;
+    width: 10vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.voltar:hover{
+    transform: scale(1.2);
+
+}
 
