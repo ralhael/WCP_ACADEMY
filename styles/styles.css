@@ -58,13 +58,23 @@ body{
 .paginainterna{
     max-width: 2000px;
     margin: 0 auto;
-    padding-top:5vh;
+    
      background: rgb(0, 0, 0)
     
      
     
      
     
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* ocupa tela inteira até o botão */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 @keyframes moverGradient {
@@ -82,6 +92,7 @@ body{
 header{
     display: center;
     align-items: center;    
+     z-index: 1; /* garante que o conteúdo fique na frente do vídeo */
     
 }
 
@@ -101,6 +112,7 @@ header{
 
 .cabecalho__conteudo {
     max-width: 95%;
+    gap: 2rem;
     width: 100%;
     margin: 0 auto; /* centraliza na horizontal */
     padding: 20px 40px; /* folga nas laterais */
@@ -117,12 +129,14 @@ header{
 
 #cabecalho_conteudo_paginas{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 90px;
+    gap: clamp(0.5rem, 4vw, 4rem);
     list-style: none;  
     width: 70vh;
-   margin: 20px;
+  
     text-align: center;
+    
     
     
 }
@@ -180,14 +194,16 @@ header{
 
 /*Main começa aqui*/
 
-.div__apresentacao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 6vh;
-     position: relative; /* cria um contexto */
-     
-      
+
+
+.div__apresentacao {
+  position: relative;
+  z-index: 1; /* garante que o conteúdo fique na frente do vídeo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px); /* ajusta para caber até o botão */
 }
 
 .div__conteudo__org__Blocos{
@@ -215,7 +231,7 @@ header{
 
 .div__apresentacao__titulo{
     color: White;
-    font-size: 60px;
+     font-size: clamp(2rem, 5vw, 4rem);
     margin: 0;          /* remove margem padrão */
     line-height: 1.3  ; 
     text-align: center;
@@ -237,8 +253,15 @@ header{
 
 }
 
-.video{
-    width: 100%;
+.video-fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cobre toda a section */
+  z-index: 1; /* fica atrás do conteúdo */
+  opacity: 0.15; /* deixa o texto visível */
 }
 .imagemPlaca{
     width: 50rem;
@@ -752,17 +775,7 @@ header{
 
 
 
-.video-fundo {
-   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 97%;
-  object-fit: cover;  /* cobre toda a div sem distorcer */
-       /* fica atrás do conteúdo */
-  opacity: 0.15;      /* deixa o vídeo mais "transparente" */
-  
-}
+
 #texto__preco{
     color: white;
     font-size: 6vh;
