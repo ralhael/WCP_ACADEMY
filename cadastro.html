@@ -13,25 +13,25 @@ rel='stylesheet'>
 <body>
 
     <main  >
-          
-            <form action="cadastro.php" method="POST" >  
+          <section class="caixa__inputs">
+            <form class="bloco__formulario" action="cadastro.php" method="POST" >  
 
                 <h1 class="legenda__login" >Login</h1>
 
-                <div >
-                    <input class="input__email"  type="email" id="email" name="email" required placeholder="Digite seu melhor email"
-                    <i class="bx bxs-user" >
+                <div class="div__email" >
 
-                    </i>  
-                    >
+                    </i>
+                    <input class="input__email"  type="email" id="email" name="email" required placeholder="Digite seu melhor email">
 
-                    
+                     <i id="icon__pessoa" class="bx bxs-user" ></i>
+
+                   
                 </div>
 
                   
 
-                <div>
-                    <input type="password"
+                <div class="div__senha" >
+                    <input class="input__senha" type="password"
                     id="senha"
                     name="senha" required
                     placeholder="Senha">
@@ -40,29 +40,35 @@ rel='stylesheet'>
                     </i>
                 </div>  
 
-                <div>
+                <div class="div__lembra" >
                     <label>
                     <input type="checkbox">
                     Lembrar de mim
                     </label>
 
-                    <a href="#">Esqueci Minha Senha</a>
+                    <a class="link__esqueci" href="#">Esqueci Minha Senha</a>
                     
                 </div>
 
-                <button type="submit" >
-                    Login
-                </button>
+                   <div class="div__botao" >                    
+                    <button class="botaoLogar" type="submit" >
+                        Login
+                    </button>
+                    </div>
 
-                <div>
-                    <p>
+                <div class="cadastrase" >
+                    <p  >
                         Não possui conta? <a  href="#">Cadastre-se</a>
                     </p>
                 </div>
 
             </form>  
-           
+        </section>
         </main>
+
+        <footer>
+            <img src="./assets/voltarCinza.png" >
+        </footer>
     
 </body>
 </html>
