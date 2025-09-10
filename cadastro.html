@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles/cadastro.css">
+</head>
+<body>
+
+    <header>
+
+
+    </header>
+
+    <main>
+
+        <section class="org__blocos" >
+
+            <div class="bloco__esquerda" >
+                <h1 id="titulo">
+                    BEM VINDO DE VOLTA!
+                </h1>
+
+                <p id="legenda"  >
+                    Para se manter conectado conosco
+                </p>
+
+                <p id="legenda" class="legenda__baixo" >
+                    faça o login com suas informaçoes pessoais.
+                </p>
+
+                <a class="botaoLogin" href="login.html" >
+                    LOGIN
+                </a>
+
+            </div>
+
+            <div class="bloco__direita" >
+
+                <h1 id="titulo__conta">Criar Conta</h1>
+
+                <div id="div__logins" >
+                    <img  src="assets/iconGogli.png">
+                    <img src="assets/iconFaceBranco.png">
+                    
+                </div>
+
+                <p id="texto" >ou use seu email para cadastrar :</p>
+
+                <form action="cadastro.php" method="POST" >
+
+                     <input class="input_nome placeholder" 
+                      type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+                      <input class="input_email placeholder"
+                       type="email" id="email" name="email" required placeholder="Digite seu melhor email">
+
+                      <input class="input_senha placeholder"
+                      type="password"
+                      id="senha"
+                      name="senha" required
+                      placeholder="Senha...">
+
+
+                      <button class="botao" type="submit">
+                        Cadastrar
+                      </button>
+
+                </form>
+
+                
+
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+    
+</body>
+</html>

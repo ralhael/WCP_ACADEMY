@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url("../assets/geograficoAzul.png");
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.org__blocos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: row; 
+}
+
+.bloco__esquerda{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(17, 18, 87);
+    box-shadow: 0 0 20px rgba(15, 15, 15, 0.91);
+    
+    padding: 30vh 10vh;
+    border-radius: 3vh;
+}
+
+#titulo{
+    font-size: 3vh;
+    margin-bottom: 2rem;
+     text-shadow: 2px 2px 5px rgba(153, 152, 152, 0.7);
+
+}
+
+#legenda{
+    line-height: none;
+    text-shadow: 2px 2px 5px rgba(153, 152, 152, 0.7);
+    
+
+}
+.legenda__baixo{
+    margin-bottom: 3vh;
+}
+
+.botaoLogin{
+
+    background:none;
+    border: 2px solid white;
+    padding: 1vh;
+    width: 100%;
+    text-align: center;
+    border-radius: 2vh;
+    text-decoration: none;
+    color: white;
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(85, 83, 83, 0.91);
+
+}
+
+.botaoLogin:hover{
+    transform: scale(1.1)
+}
+
+input{
+     box-shadow: 0 0 5px rgba(85, 83, 83, 0.91);
+}
+
+.bloco__direita{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+    padding: 22vh 10vh;
+    text-align: center;
+    background-color: rgb(6, 6, 7);
+    border-radius: 3vh;
+    box-shadow: 0 0 20px rgba(15, 15, 15, 0.91);
+    
+    
+}
+
+#titulo__conta{
+    color: rgb(17, 18, 87);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow:rgb(72, 72, 76) 5px 5px;
+
+}
+
+.div__logins{
+    margin-bottom:3rem;
+
+}
+
+
+
+#texto{
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+    
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_nome{
+    margin-top: 1rem;
+    
+     background: rgb(44, 43, 43);
+     width: 40vh;
+     border:none;
+     border-radius:5px;
+     padding: 12px;
+}
+
+.input_email{
+    margin-top: 1rem;
+    
+     background: rgb(44, 43, 43);
+     width: 40vh;
+     border:none;
+     border-radius:5px;
+     padding: 12px;
+}
+
+.input_senha{
+    margin-top: 1rem;
+    
+     background: rgb(44, 43, 43);
+     width: 40vh;
+     border:none;
+     border-radius:5px;
+     padding: 12px;
+     margin-bottom: 2rem;
+}
+
+.placeholder::placeholder{
+    color: black;
+
+}
+
+.botao{
+    background:none;
+    border: 2px solid white;
+    padding: 1vh;
+    width: 20vh;
+    text-align: center;
+    border-radius: 2vh;
+    text-decoration: none;
+    color: white;
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(85, 83, 83, 0.91);
+
+}
+
+.botao:hover{
+    transform: scale(1.1)
+
+}
