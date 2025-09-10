@@ -89,10 +89,10 @@ input{
 }
 
 #titulo__conta{
-    color: rgb(17, 18, 87);
+    color: rgb(34, 36, 146);
     font-size: 3rem;
     margin-bottom: 2rem;
-    text-shadow:rgb(72, 72, 76) 5px 5px;
+    text-shadow: 2px 2px 5px rgba(15, 15, 15, 0.7);
 
 }
 
