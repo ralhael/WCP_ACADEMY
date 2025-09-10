@@ -98,6 +98,26 @@ input{
 
 .div__logins{
     margin-bottom:3rem;
+    display: flex;
+    
+
+}
+
+#icons{
+color: white;
+
+
+}
+
+.linkFace{
+
+    margin-right: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.linkGo{
+
 
 }
 
