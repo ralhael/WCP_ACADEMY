@@ -115,7 +115,7 @@ header{
     gap: 2rem;
     width: 100%;
     margin: 0 auto; /* centraliza na horizontal */
-    padding: 20px 40px; /* folga nas laterais */
+    padding: 20px 50px; /* folga nas laterais */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -133,9 +133,11 @@ header{
     flex-direction: row;
     gap: clamp(0.5rem, 4vw, 4rem);
     list-style: none;  
-    width: 70vh;
-  
+    width: 100vh;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+    padding-right: 3vh;
     
     
     
@@ -1072,6 +1074,7 @@ header{
     #cabecalho_conteudo_paginas{
         flex-direction: column;
         gap: 4vh;
+        padding-right: 0;
     }
 
     .div__apresentacao{
