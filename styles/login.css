@@ -9,15 +9,19 @@
 }
 
 body{
-    display: flex;
+     background-image: url("../assets/fundogeografico.png");
+    background-size: cover;
+ 
+    
+}
+
+main{
+       display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("../assets/fundogeografico.png");
-    background-size: cover;
     color: white;
     text-align: center;
-    
     
 }
 
@@ -78,7 +82,16 @@ width: 30vh;
 .div__lembra{
     padding-top: 2px;
     padding-bottom: 2vh;
+    display: flex;
+    justify-content: space-between;
     
+    
+}
+    
+.div__lembra label input{
+
+    accent-color: gray;
+
 }
 
 .link__esqueci{
@@ -95,11 +108,13 @@ width: 30vh;
 }
 
 .botaoLogar{
-    padding: 0.5vh 7vh ;
+    width: 100%;
+    padding: 1vh 7vh ;
     background:rgb(141, 140, 140);
     color: white;
     transition:transform 0.3s ease-in-out;
-    border-radius: 10px;
+    border-radius: 20px;
+    border: none;
 }
 
 .botaoLogar:hover{
@@ -110,8 +125,27 @@ width: 30vh;
 
 }
 .cadastrese{
-   padding-top: 2vh; 
+   padding-top: 2vh;  
+ 
 
-    
+}
+
+
+.texto__cadastro{
+       
+        color: white;
+        font-weight: 600;
+
+
+}
+
+.voltar{
+    margin: 1rem;
+    width: 10vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.voltar:hover{
+    transform: scale(1.2);
 
 }
