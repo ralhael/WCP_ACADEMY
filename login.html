@@ -13,10 +13,12 @@ rel='stylesheet'>
 <body>
 
     <main  >
-          <section class="caixa__inputs">
-            <form class="bloco__formulario" action="login.php" method="POST" >  
+          <section class="caixa__inputs"  >
+            <form  action="" method="post" >  
 
                 <h1 class="legenda__login" >Login</h1>
+
+                
 
                 <div class="div__email" >
 
@@ -32,7 +34,7 @@ rel='stylesheet'>
                 <div class="div__senha" >
                     <input class="input__senha" type="password"
                     id="senha"
-                    name="senha" required
+                    name="password" required
                     placeholder="Senha">
                     <i class="bx bxs-lock-alt" >
 
@@ -50,7 +52,7 @@ rel='stylesheet'>
                 </div>
 
                    <div class="div__botao" >                    
-                    <button class="botaoLogar" type="submit" >
+                    <button class="botaoLogar" type="submit" name="login" >
                         Login
                     </button>
                     </div>

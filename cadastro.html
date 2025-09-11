@@ -50,7 +50,9 @@
 
                 <p id="texto" >ou use seu email para cadastrar :</p>
 
-                <form action="cadastro.php" method="POST" >
+                <form action="login_register.php" method="post" >
+
+                   
 
                      <input class="input_nome placeholder" 
                       type="text" id="name" name="name" required placeholder="Digite seu nome">
@@ -61,11 +63,11 @@
                       <input class="input_senha placeholder"
                       type="password"
                       id="senha"
-                      name="senha" required
+                      name="password" required
                       placeholder="Senha...">
 
 
-                      <button class="botao" type="submit">
+                      <button class="botao" type="submit" name="register" >
                         Cadastrar
                       </button>
 
