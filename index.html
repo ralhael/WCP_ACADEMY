@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário de Cadastro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/cadastro.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro/Login</title>
+  <link rel="stylesheet" href="./styles/cadastro.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="container">
-        <div class="formulario-bootstrap mx-auto">
-            <p class="h2 text-center mb-4">Formulário de Cadastro</p>
+  <main>
+    <section class="org__blocos">
+      
+      
+      <div class="bloco__esquerda">
+        <img src="assets/academyBranco.png" class="academy">
+        <h1>BEM VINDO DE VOLTA!</h1>
+        <p>Para voltar ao menu clique abaixo:</p>
+        
+        <a href="inicio.html" class="div__botao__esq"  >
+        <div class="botao__esq" >
+         INICIO
+         </div>
+         </a>
+      </div>
 
-            <div class="mb-3">
-                <input type="email" class="form-control email-class" id="email" placeholder="Digite seu email">
-            </div>
+      
+      <div class="bloco__direita">
+        <h2 id="titulo__conta">Criar Conta</h2>
 
-            <div class="mb-3">
-                <input type="password" class="form-control email-class" id="senha" placeholder="Digite sua senha (min 6 caracteres)">
-            </div>
-
-            <div class="d-grid gap-2">
-                <button onclick="cadastrar()" class="btn btn-info butao-sucesses" type="button">Cadastrar</button>
-            </div>
+        <div id="div__logins">
+          <i class='bx bxl-facebook-circle' id="icons"></i>
+          <i class='bx bxl-google' id="icons"></i>
         </div>
-    </div>
 
-    
-    <script type="module">
-        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
-        import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
+        <p id="texto">ou use seu email para cadastrar:</p>
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyAJ4V74e4RPNuiYsM4pG6foUqeXXgiWTEY",
-            authDomain: "academydatas-dc1a2.firebaseapp.com",
-            projectId: "academydatas-dc1a2",
-            storageBucket: "academydatas-dc1a2.firebasestorage.app",
-            messagingSenderId: "932482523151",
-            appId: "1:932482523151:web:d6bb14f77b8d93b5c2837a"
-        };
+        <form id="formCadastro">
+          <input type="email" id="email" class="input_email" placeholder="Digite seu melhor email" required>
+          <input type="password" id="senha" class="input_senha" placeholder="Digite sua senha" required>
+          <button type="submit" class="botao">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
+  
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
+    import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
-        // Tornar a função global para o onclick funcionar
-        window.cadastrar = function() {
-            const email = document.getElementById("email").value;
-            const senha = document.getElementById("senha").value;
-            
-            if (!email || !senha) {
-                alert("Por favor, preencha email e senha");
-                return;
-            }
-            
-            createUserWithEmailAndPassword(auth, email, senha)
-                .then((userCredential) => {
-                    console.log("Usuário cadastrado:", userCredential.user);
-                    alert("Seus dados foram cadastrados com sucesso!");
-                    
-                    document.getElementById('email').value = '';
-                    document.getElementById('senha').value = '';
-                })
-                .catch((error) => {
-                    console.error("Erro ao cadastrar:", error.code, error.message);
-                    
-                    switch(error.code) {
-                        case 'auth/email-already-in-use':
-                            alert('Este email já está em uso');
-                            break;
-                        case 'auth/invalid-email':
-                            alert('Email inválido');
-                            break;
-                        case 'auth/weak-password':
-                            alert('A senha deve ter pelo menos 6 caracteres');
-                            break;
-                        default:
-                            alert('Falha ao cadastrar: ' + error.message);
-                    }
-                });
-        }
-    </script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAJ4V74e4RPNuiYsM4pG6foUqeXXgiWTEY",
+      authDomain: "academydatas-dc1a2.firebaseapp.com",
+      projectId: "academydatas-dc1a2",
+      storageBucket: "academydatas-dc1a2.firebasestorage.app",
+      messagingSenderId: "932482523151",
+      appId: "1:932482523151:web:d6bb14f77b8d93b5c2837a"
+    };
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    document.getElementById("formCadastro").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      createUserWithEmailAndPassword(auth, email, senha)
+        .then((userCredential) => {
+          alert("Seus dados foram cadastrados com sucesso!");
+          document.getElementById("formCadastro").reset();
+        })
+        .catch((error) => {
+          alert("Erro: " + error.message);
+        });
+    });
+  </script>
 </body>
 </html>
