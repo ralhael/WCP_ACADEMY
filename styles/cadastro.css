@@ -137,7 +137,7 @@ form{
 .input_nome{
     margin-top: 1rem;
     
-     background: rgb(44, 43, 43);
+     background: rgb(227, 246, 255);
      width: 40vh;
      border:none;
      border-radius:5px;
@@ -146,8 +146,7 @@ form{
 
 .input_email{
     margin-top: 1rem;
-    
-     background: rgb(44, 43, 43);
+     background: rgb(227, 246, 255);
      width: 40vh;
      border:none;
      border-radius:5px;
@@ -157,7 +156,7 @@ form{
 .input_senha{
     margin-top: 1rem;
     
-     background: rgb(44, 43, 43);
+    background: rgb(227, 246, 255);
      width: 40vh;
      border:none;
      border-radius:5px;
