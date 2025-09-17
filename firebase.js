@@ -49,4 +49,17 @@ function cadastrar() {
                     alert('Falha ao cadastrar: ' + error.message);
             }
         });
+
+         function loginGoogle() {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+      .then((result) => {
+        var user = result.user;
+        alert("Logado com Google: " + user.displayName);
+      })
+      .catch((error) => {
+        alert("Erro Google: " + error.message);
+      });
+  }
+
 }

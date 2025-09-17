@@ -29,8 +29,8 @@
         <h2 id="titulo__conta">Criar Conta</h2>
 
         <div id="div__logins">
-          <i class='bx bxl-facebook-circle' id="icons"></i>
-          <i class='bx bxl-google' id="icons"></i>
+         
+          <i class='bx bxl-google' id="icons" onclick="loginGoogle()" ></i>
         </div>
 
         <p id="texto">ou use seu email para cadastrar:</p>
@@ -47,7 +47,12 @@
   
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
-    import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
+    import { 
+      getAuth, 
+      createUserWithEmailAndPassword, 
+      signInWithPopup, 
+      GoogleAuthProvider,
+    } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
 
     const firebaseConfig = {
       apiKey: "AIzaSyAJ4V74e4RPNuiYsM4pG6foUqeXXgiWTEY",
@@ -60,6 +65,24 @@
 
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
+    const googleProvider = new GoogleAuthProvider();
+    
+
+
+window.loginGoogle = async () => {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+    
+    alert(`Bem-vindo, ${user.displayName}!`);
+    // window.location.href = 'inicio.html'; // descomente se quiser redirecionar
+    
+  } catch (error) {
+    console.error('Erro no login com Google:', error);
+    alert('Erro no login: ' + error.message);
+  }
+};
+
 
     document.getElementById("formCadastro").addEventListener("submit", (e) => {
       e.preventDefault();
