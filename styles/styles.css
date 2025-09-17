@@ -743,7 +743,8 @@ header{
 }
 
 .iconUm{
-    width: 5vh;
+    width: 6vh;
+    border-radius: 1vh;
 }
 
 #linha{
@@ -976,7 +977,7 @@ header{
 
 .link:hover{
     transform: scale(1.15);
-    color: #000080;
+    color: #195eac;
 }
 
 .segunda_coluna_infos{
@@ -1004,7 +1005,7 @@ header{
 
 #link__duvidas:hover{
     transform: scale(1.25);
-    color: #000080;
+    color: #195eac;
 }
 
 

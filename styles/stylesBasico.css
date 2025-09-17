@@ -121,12 +121,15 @@ body{
     line-height: 8vh;
     font-size: 7vh;
     padding-top: 2vh;
+    max-width: 100%;
 }
 
 .subtexto{
+    max-width: 100%;
     font-size: 3vh;
     color: #6b6a6b;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-align: center;
 }
 
 
@@ -160,7 +163,7 @@ video {
 }
 
 #conteudo__introducao{
-    width: 110vh;
+    max-width: 100%;
     text-align: center;
     padding-bottom: 10vh;
     color: #6b6a6b;
@@ -245,5 +248,27 @@ a{
 
 .voltar:hover{
     transform: scale(1.2);
+
+}
+
+
+@media (max-width:480px){
+
+    #titulo{
+        font-size: 4vh;
+        
+       
+    }
+
+    .subtexto{
+        font-size: 3vh;
+        width: 50vh;
+    }
+
+    #conteudo__introducao{
+        font-size: 3vh;
+
+    }
+
 
 }
