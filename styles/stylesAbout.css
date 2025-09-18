@@ -241,7 +241,7 @@ strong{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: linear-gradient(192deg , rgb(10, 22, 129), rgb(0, 0, 0),rgb(4, 13, 95));
+    background: linear-gradient(192deg , rgb(24, 37, 156), rgb(0, 0, 0),rgb(11, 25, 150));
    animation: moverGradient 10s ease
    infinite;
     background-size: 300% 300%;    
@@ -256,7 +256,7 @@ strong{
 
 .bloco__pequeno{
 
-    background: linear-gradient(132deg , rgb(10, 22, 129), rgb(0, 0, 0),rgb(7, 19, 128));
+    background: linear-gradient(132deg , rgb(24, 37, 156), rgb(0, 0, 0),rgb(24, 37, 156));
     background-size: 300% 300%;
     animation: moverGradient 10s ease infinite;
     width: 100vh;
