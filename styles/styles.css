@@ -388,6 +388,7 @@ header{
     margin: 0;
     line-height: 7;
     text-shadow: 2px 2px 5px rgb(108, 118, 119);
+    max-width: 100%;
 }
 
 .div__juncao__cursos{

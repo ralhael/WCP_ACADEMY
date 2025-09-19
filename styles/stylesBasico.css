@@ -58,7 +58,7 @@ body{
 /*header começa aqui*/
 
 .engloba{
-    background-image: url("../assets/fundoBasic.png"); /* caminho da imagem */
+    background-image: url("../assets/fundoBasicobronze.png"); /* caminho da imagem */
     background-size: cover;      /* cobre todo o espaço */
     background-position: center; /* centraliza a imagem */
     background-repeat: no-repeat;/* impede repetição */
@@ -113,7 +113,7 @@ body{
 }
 
 #titulo{
-    color: #6b6a6b;
+    color: rgba(255, 255, 255, 0.781);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-size: 5vh;
     margin: 0;
@@ -127,7 +127,7 @@ body{
 .subtexto{
     max-width: 100%;
     font-size: 3vh;
-    color: #6b6a6b;
+    color: rgba(255, 255, 255, 0.781);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     text-align: center;
 }
@@ -166,7 +166,7 @@ video {
     max-width: 100%;
     text-align: center;
     padding-bottom: 10vh;
-    color: #6b6a6b;
+    color: rgba(255, 255, 255, 0.781);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
@@ -187,7 +187,9 @@ video {
     flex: 1 1 300px;    /* mínimo 300px e cresce conforme espaço */
     max-width: 400px;   /* limite da largura */
     transition: transform ease 0.3s;
-    background-color: #1d1d1f;
+    background-color: #463626;
+    margin-left: 2vh ;
+    margin-right:2vh ;
     
 }
 
@@ -197,7 +199,7 @@ video {
 
 #textosCentralizados{
     text-align: center;
-   color: #6b6a6b;
+   color: rgba(255, 255, 255, 0.781);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
@@ -270,5 +272,28 @@ a{
 
     }
 
+    .div__organiza__blocos{
+            gap: 5vh;
 
+    }
+
+    .div__conteudinhos{
+        margin-left: 2vh ;
+        margin-right:2vh ;
+
+
+    }
 }
+
+    @media (min-width: 769px) and (max-width: 1024px){
+
+        .div__organiza__blocos{
+            gap: 5vh;
+        }
+    }
+
+    
+
+    
+
+

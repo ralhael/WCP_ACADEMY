@@ -71,9 +71,11 @@ body{
     color: #ffffff;
 }
 .subtexto{
+    max-width: 100%;
     font-size: 3vh;
     text-shadow: 4px 4px 5px rgba(104, 101, 101, 0.7);
     color: #ffffff;
+    text-align: center;
 }
 
 .cabecalho{
@@ -142,7 +144,7 @@ video {
 }
 
 #conteudo__introducao{
-    width: 110vh;
+    width: 100%;
     text-align: center;
     padding-bottom: 10vh;
      text-shadow: 4px 4px 5px rgba(104, 101, 101, 0.7);
@@ -230,3 +232,37 @@ a{
 
 }
 
+
+@media (max-width:480px){
+
+    #titulo{
+        font-size: 4vh;
+        
+       
+    }
+
+    .subtexto{
+        font-size: 2.5vh;
+        width: 50vh;
+        
+    }
+
+    #conteudo__introducao{
+        font-size: 2.5vh;
+
+    }
+
+    .div__organiza__blocos{
+            gap: 5vh;
+
+    }
+
+    .div__conteudinhos{
+        margin-left: 2vh ;
+        margin-right:2vh ;
+
+
+    }
+}
+
+   
