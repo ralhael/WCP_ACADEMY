@@ -1430,6 +1430,11 @@ header{
         flex-direction: column;
     }
     
+    #cabecalho_conteudo_paginas{
+        
+
+    }
+
     .legenda__curso__grande {
         font-size: 3vh;
     }
