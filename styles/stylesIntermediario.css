@@ -58,7 +58,6 @@ body{
     background-position: center; /* centraliza a imagem */
     background-repeat: no-repeat;/* impede repetição */
     background-attachment: fixed;
-    border-radius: 2vh;
     box-shadow: 0 0 20px rgba(77, 77, 77, 0.267) ;
 
 
