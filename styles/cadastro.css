@@ -178,15 +178,17 @@ form {
 /* MEDIA QUERY PARA MOBILE (480px) */
 @media (max-width: 480px) {
   body {
-    padding: 20px;
-    align-items: flex-start;
-    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vh;
+   
+    
   }
 
   .org__blocos {
     flex-direction: column;
-    width: 100%;
-    max-width: 400px;
+    width: 100vh;
+    max-width: 480px;
     min-height: auto;
     border-radius: 2vh;
   }
