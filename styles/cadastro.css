@@ -24,6 +24,7 @@ body {
  box-shadow: 0 0 25px rgb(14, 13, 13);
   background: #0a0a0a;
   border-radius: 3vh;
+  margin: 2vh;
 }
 
 /* BLOCO ESQUERDA */
@@ -170,4 +171,94 @@ form {
     display: flex;
     align-items: center;
     gap:2vh;
+}
+
+
+
+/* MEDIA QUERY PARA MOBILE (480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  .org__blocos {
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    min-height: auto;
+    border-radius: 2vh;
+  }
+
+  /* BLOCO ESQUERDA NO MOBILE */
+  .bloco__esquerda {
+    padding: 3vh 2vh;
+    border-radius: 2vh 2vh 0 0;
+  }
+
+  .academy {
+    width: 12vh;
+  }
+
+  .bloco__esquerda h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+  }
+
+  .bloco__esquerda p {
+    font-size: 0.8rem;
+    margin-bottom: 2vh;
+  }
+
+  .div__botao__esq {
+    padding: 1vh 8vh;
+    font-size: 0.9rem;
+  }
+
+  /* BLOCO DIREITA NO MOBILE */
+  .bloco__direita {
+    padding: 3vh 2vh;
+    border-radius: 0 0 2vh 2vh;
+  }
+
+  #titulo__conta {
+    font-size: 2.5rem;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+
+  #div__logins {
+    margin-bottom: 2vh;
+  }
+
+  #icons {
+    font-size: 2rem;
+  }
+
+  #texto {
+    font-size: 11px;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+
+  #formCadastro {
+    width: 100%;
+    align-items: stretch;
+    gap: 1.5vh;
+  }
+
+  .input_email,
+  .input_senha {
+    width: 100%;
+    padding: 15px 12px;
+    font-size: 16px; /* Para evitar zoom no iOS */
+  }
+
+  .botao {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 1vh;
+  }
 }
