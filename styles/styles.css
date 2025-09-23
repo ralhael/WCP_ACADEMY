@@ -125,11 +125,11 @@ header{
     box-shadow: 0 0 20px rgba(0.4, 0.4, 0.4, 0.5);
     
     
+    
 }
 
 #cabecalho_conteudo_paginas{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;  
     flex-direction: row;
     gap: clamp(0.5rem, 4vw, 4rem);
     list-style: none;  
@@ -151,6 +151,7 @@ header{
     transition: transform 0.3s ease, color 0.3s ease;
     font-size: 3vh;
     text-shadow:  2px 2px 5px rgb(151, 147, 147);
+    white-space: nowrap;
      
      
 }
@@ -206,12 +207,12 @@ header{
   align-items: center;
   justify-content: center;
   min-height: calc(100vh - 100px); /* ajusta para caber até o botão */
+  
 }
 
 .div__conteudo__org__Blocos{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
     align-items: center;
     justify-content: center;   
     border-radius: 2rem;
@@ -639,15 +640,18 @@ header{
 
 .div__porque__esquerda{
     padding-left: 20px;
+    width: 50%;
+    
     
     
 }
 
 
 #texto__porque__esquerda{
-    width: 600px;
+    width: 100%;
     color: white;
     font-size: 3vh;
+
 }
 
 .topicoum__porque__esquerda{
@@ -678,7 +682,8 @@ header{
     background: linear-gradient(135deg, #2f213a, #000000, #0b1018);
     background-size: 300% 300%;
     animation: moverGradient 12s ease infinite;
-    padding-top:120px
+    padding-top:120px;
+    margin: 2vh;
     
     
 
@@ -792,7 +797,7 @@ header{
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2); /* aumenta 20% */
+    transform: scale(1.1); /* aumenta 20% */
   }
   100% {
     transform: scale(1);
@@ -1045,394 +1050,27 @@ header{
 
 
 
-/* DESKTOP GRANDE - 1440px+ */
-@media (min-width: 1440px) {
-    .paginainterna {
-        max-width: 1920px;
-    }
-    
-    .cabecalho__conteudo {
-        max-width: 90%;
-        padding: 25px 60px;
-    }
-    
-    .div__apresentacao__titulo {
-        font-size: clamp(3rem, 6vw, 5rem);
-    }
-    
-    .legenda__curso__grande {
-        font-size: 7vh;
-    }
-}
 
-/* DESKTOP PADRÃO - 1200px até 1439px */
-@media (min-width: 1200px) and (max-width: 1439px) {
-    .cabecalho__conteudo {
-        padding: 20px 40px;
-    }
-    
-    .div__organizacao__blocos__sup {
-        gap: 25vh;
-    }
-    
-    .div__organizacao__blocos__inf {
-        gap: 35vh;
-    }
-}
 
-/* TABLET GRANDE - 992px até 1199px */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .cabecalho__conteudo {
-        padding: 20px 30px;
-    }
-    
-    .cabecalho_conteudo_links {
-        font-size: 2.5vh;
-    }
-    
-    .div__apresentacao__titulo {
-        font-size: clamp(2.5rem, 5vw, 3.5rem);
-    }
-    
-    .div__organizacao__blocos__sup {
-        gap: 20vh;
-    }
-    
-    .div__organizacao__blocos__inf {
-        gap: 25vh;
-    }
-    
-    .div__dois__blocos {
-        gap: 5vh;
-    }
-    
-    #texto__porque__esquerda {
-        width: 500px;
-        font-size: 2.5vh;
-    }
-    
-    .div__feedbacks__blocos {
-        gap: 3vh;
-    }
-    
-    .div__bloco__fulanos {
-        padding: 1.5vh;
-    }
-}
-
-/* TABLET MÉDIO - 768px até 991px */
-@media (min-width: 768px) and (max-width: 991px) {
-    .cabecalho__conteudo {
-        flex-direction: column;
-        gap: 5vh;
-        padding: 3vh 2vh;
-        text-align: center;
-    }
-    
-    .cabecalho_conteudo_imagem {
-        width: 18vh;
-    }
-    
-    #cabecalho_conteudo_paginas {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 3vh;
-        width: auto;
-        padding-right: 0;
-        justify-content: center;
-    }
-    
-    .cabecalho_conteudo_links {
-        font-size: 2.2vh;
-    }
-    
-    #wcpsemfundo {
-        width: 15vh;
-    }
-    
-    .div__apresentacao__titulo {
-        font-size: clamp(2rem, 4.5vw, 3rem);
-    }
-    
-    .div__apresentacao__legenda {
-        font-size: 18px;
-    }
-    
-    .imagemPlaca {
-        width: 35rem;
-    }
-    
-    .div__organizacao__blocos__sup {
-        gap: 15vh;
-    }
-    
-    .div__organizacao__blocos__inf {
-        gap: 20vh;
-    }
-    
-    .div__dois__blocos {
-        flex-direction: column;
-        align-items: center;
-        gap: 5vh;
-    }
-    
-    .div__porque__esquerda {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 2vh;
-    }
-    
-    #texto__porque__esquerda {
-        width: 90%;
-        font-size: 2.2vh;
-        text-align: center;
-    }
-    
-    .div__feedbacks__blocos {
-        flex-direction: column;
-        gap: 4vh;
-        align-items: center;
-    }
-    
-    .div__bloco__fulanos {
-        max-width: 80%;
-    }
-    
-    #texto__preco {
-        font-size: 4vh;
-    }
-    
-    .div_juncao_colunas {
-        flex-direction: column;
-        gap: 4vh;
-        text-align: center;
-    }
-}
-
-/* TABLET PEQUENO/MOBILE GRANDE - 576px até 767px */
-@media (min-width: 576px) and (max-width: 767px) {
-    .cabecalho__conteudo {
-        flex-direction: column;
-        gap: 4vh;
-        padding: 2vh;
-    }
-    
-    .cabecalho_conteudo_imagem {
-        width: 16vh;
-    }
-    
-    #cabecalho_conteudo_paginas {
-        flex-direction: column;
-        gap: 2vh;
-        width: auto;
-    }
-    
-    .cabecalho_conteudo_links {
-        font-size: 2vh;
-    }
-    
-    #wcpsemfundo {
-        width: 12vh;
-    }
-    
-    .div__conteudo__org__Blocos {
-        flex-direction: column;
-        gap: 3vh;
-        padding: 0 2vh;
-    }
-    
-    .div__apresentacao__titulo {
-        font-size: clamp(1.8rem, 4vw, 2.5rem);
-        text-align: center;
-    }
-    
-    .div__apresentacao__legenda {
-        font-size: 16px;
-        text-align: center;
-    }
-    
-    .imagemPlaca {
-        width: 25rem;
-    }
-    
-    .legenda__curso__grande {
-        font-size: 4vh;
-    }
-    
-    .legenda__curso__pequena {
-        font-size: 4vh;
-    }
-    
-    #legenda__curso__subtitulo {
-        font-size: 16px;
-        padding: 0 2vh;
-    }
-    
-    .div__organizacao__blocos__sup {
-        flex-direction: column;
-        gap: 8vh;
-    }
-    
-    .div__organizacao__blocos__inf {
-        flex-direction: column;
-        gap: 8vh;
-    }
-    
-    .bloco__um,
-    .bloco__dois {
-        text-align: center;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-    
-    #titulo__porque {
-        font-size: 3.5vh;
-        text-align: center;
-        padding-bottom: 5vh;
-    }
-    
-    .div__dois__blocos {
-        flex-direction: column;
-    }
-    
-    .div__porque__esquerda {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-    
-    #texto__porque__esquerda {
-        width: 90%;
-        font-size: 2vh;
-        text-align: center;
-    }
-    
-    .todas__asLegendas {
-        align-items: center;
-        text-align: center;
-    }
-    
-    .topicoum__porque__esquerda {
-        justify-content: center;
-        gap: 2vh;
-    }
-    
-    .div__porque__direita {
-        padding: 5vh 2vh;
-        margin: 0 2vh;
-    }
-    
-    .div__feedbacks__blocos {
-        flex-direction: column;
-        gap: 3vh;
-    }
-    
-    .div__bloco__fulanos {
-        max-width: 90%;
-        margin: 0 auto;
-    }
-    
-    #texto__preco {
-        font-size: 3vh;
-    }
-    
-    .div_juncao_colunas {
-        flex-direction: column;
-        gap: 3vh;
-    }
-    
-    .primeira_coluna_infos,
-    .segunda_coluna_infos,
-    .terceira_coluna_infos {
-        text-align: center;
-    }
-}
-
-/* MOBILE MÉDIO - 480px até 575px */
-@media (min-width: 480px) and (max-width: 575px) {
-    .cabecalho_conteudo_imagem {
-        width: 14vh;
-    }
-    
-    .cabecalho_conteudo_links {
-        font-size: 1.8vh;
-    }
-    
-    #wcpsemfundo {
-        width: 10vh;
-    }
-    
-    .div__apresentacao__titulo {
-        font-size: clamp(1.5rem, 4vw, 2.2rem);
-    }
-    
-    .div__apresentacao__legenda {
-        font-size: 14px;
-    }
-    
-    .imagemPlaca {
-        width: 20rem;
-    }
-    
-    .imagemAssinar {
-        width: 15vh;
-    }
-    
-    .legenda__curso__grande {
-        font-size: 3.5vh;
-    }
-    
-    #legenda__curso__subtitulo {
-        font-size: 14px;
-    }
-    
-    .bloco__iniciante,
-    .bloco__intermediario,
-    .bloco__avancado {
-        padding: 35px;
-    }
-    
-    #texto__porque__esquerda {
-        font-size: 1.8vh;
-        width: 95%;
-    }
-    
-    .div__porque__direita {
-        padding: 4vh 1vh;
-    }
-    
-    #texto__grande__porque__direita {
-        font-size: 6vh;
-    }
-    
-    #texto__pequeno__porque__direita {
-        font-size: 1.5vh;
-    }
-    
-    #texto__preco {
-        font-size: 2.5vh;
-    }
-    
-    .bloco__preco__basico,
-    .bloco__preco__intermediario,
-    .bloco__preco__avancado {
-        padding: 1.5vh;
-        margin: 0 1vh;
-    }
-}
-
-/* MOBILE PEQUENO - até 479px */
-@media (max-width: 479px) {
+@media (max-width: 480px) {
     .cabecalho__conteudo{
-        display: flex;
         flex-direction: column;
+        align-items: center;
+        
+        
     }
     
     #cabecalho_conteudo_paginas{
+       flex-direction: column;
+       padding-right: 0;
+        
         
 
+    }
+
+    #legenda__grande__debaixo{
+
+        padding-bottom: 2vh;
     }
 
     .legenda__curso__grande {
@@ -1445,47 +1083,81 @@ header{
     
     #legenda__curso__subtitulo {
         font-size: 12px;
-        padding: 0 1vh;
+        padding: 2vh 1vh 5vh 1vh;
+        line-height: 3;
+        text-align: center;
+        
     }
     
     .div__juncao__cursos {
         gap: 60px;
+    }
+
+    #wcpsemfundo{
+        width: 0;
     }
     
     .bloco__iniciante,
     .bloco__intermediario,
     .bloco__avancado {
         padding: 30px 20px;
-        margin: 0 1vh;
+        margin: 2vh
     }
     
     .div__organizacao__blocos__sup,
     .div__organizacao__blocos__inf {
         flex-direction: column;
         gap: 6vh;
+        align-items: center;
     }
     
     .bloco__um,
     .bloco__dois {
         max-width: 90%;
+        
     }
     
     #titulo__porque {
         font-size: 3vh;
         padding-bottom: 4vh;
+        text-align: center;
     }
     
+    .div__dois__blocos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div__porque__esquerda{
+        padding-left: 0;
+        width: 100%;
+       
+
+    }
+
     #texto__porque__esquerda {
         font-size: 1.6vh;
         width: 95%;
         line-height: 1.4;
+        padding-bottom: 5vh;
+        text-align: center;
     }
     
     .topicoum__porque__esquerda {
         gap: 1.5vh;
         align-items: center;
+        
+    }
+
+    #titulo{
+        font-size: 3vh;
     }
     
+    .todas__asLegendas{
+
+        display: none;
+    }
+
     #legendas__porque__esquerda__paragrafo {
         font-size: 1.4vh;
     }
@@ -1516,9 +1188,11 @@ header{
     }
     
     #texto__preco {
-        font-size: 2vh;
+        font-size: 3vh;
         text-align: center;
         padding: 0 1vh;
+        max-width: 100%;
+
     }
     
     
@@ -1542,6 +1216,7 @@ header{
     .segunda_coluna_infos,
     .terceira_coluna_infos {
         text-align: center;
+        
     }
     
     .link,
@@ -1557,6 +1232,7 @@ header{
     .rodape_conteudo_texto {
         font-size: 14px;
         padding: 15px;
+        text-align: center;
     }
     
     .rodape_conteudo_imagemWcp {
@@ -1564,9 +1240,141 @@ header{
     }
 }
 
-/* CORREÇÕES GERAIS PARA TODOS OS BREAKPOINTS */
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    #wcpsemfundo{
+        padding-top: 10px;
+        width: 7vh;
+    }
+
+    .div__apresentacao__titulo{
+        font-size: 6vh;
+        
+    }
+    
+
+    #textoDocumental{
+
+        margin-bottom: 12vh;
+
+    }
+
+  
+    .imagemAssinar{
+        margin-top: 5vh;
+    }
+
+
+
+    .cabecalho_conteudo_imagem{
+        
+        width: 8vh;
+
+    }
+
+
+    #contatoLink{
+        padding-right: 5vh;
+
+    }
+
+    
+
+    #cabecalho_conteudo_paginas{
+        flex-direction: row;
+        font-size: 2px;
+       padding-right: 0vh;
+        
+        
+
+
+    }
+
+    .cabecalho_conteudo_links{
+        font-size: 2vh;
+        
+
+    }
+
+
+
+
+    #legenda__curso__subtitulo{
+        line-height: 3;
+        text-align: center;
+
+    }
+
+    .div__dois__blocos{
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .todas__asLegendas{
+        display: none;
+    }
+
+    #texto__porque__esquerda{
+
+        text-align: center;
+
+    }
+
+    .div__porque__esquerda{
+
+        padding: 0;
+        margin: 2vh;
+    }
+
+    #texto__preco{
+
+        font-size: 3.8vh;
+        text-align: center;
+        padding: 0 1vh;
+        max-width: 100%;
+    }
+
+    #titulo__porque{
+
+        font-size: 4vh;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1100px) {
-    /* Mantém as configurações originais */
+    
     .imagemPlaca {
         width: 0;
     }
