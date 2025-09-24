@@ -87,6 +87,11 @@ header{
     
 }
 
+main{
+    margin: 3vh;
+
+}
+
 
 
 
@@ -106,8 +111,7 @@ strong{
 
 
 .cabecalho__conteudo {
-    max-width: 95%;
-    width: 100%;
+    max-width: 95%; 
     margin: 0 auto; /* centraliza na horizontal */
     padding: 20px 40px; /* folga nas laterais */
     display: flex;
@@ -192,6 +196,7 @@ strong{
     padding-bottom:10vh;
     padding-top:10vh;
     
+    
 
 }
 
@@ -199,6 +204,8 @@ strong{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 95%;
+    
    
 }
 
@@ -259,10 +266,12 @@ strong{
     background: linear-gradient(132deg , rgb(24, 37, 156), rgb(0, 0, 0),rgb(24, 37, 156));
     background-size: 300% 300%;
     animation: moverGradient 10s ease infinite;
-    width: 100vh;
+    max-width: 100%;
     border-radius:3vh;
     padding-bottom: 5vh;
     box-shadow: 0 0 10px rgb(241, 241, 241);
+    
+    text-align: center;
     
 }
 
@@ -474,124 +483,38 @@ span{
 
 
 
-@media (max-width:1020px){
 
+    
+
+
+
+
+@media (max-width:480px){
+
+    main{
+        margin: 2vh;
+
+    }
 
     .cabecalho__conteudo{
+
         flex-direction: column;
-        gap: 10vh;
-        padding: 4vh;
-        text-align: center;
-    }
+        align-items: center;
+        
+        
 
-    .cabecalho_conteudo_imagem{
-        width: 20vh;
-
-    }
-
-    #wcpsemfundo{
-        width: 0;
     }
 
     #cabecalho_conteudo_paginas{
         flex-direction: column;
-        gap: 4vh;
-    }
-
-    .div__apresentacao{
-        flex-direction: column;
-    }
-
-    .imagemPlaca{
-        width: 0;
-    }
-
-    .div__conteudo__org__Blocos{
-        gap: 5vh;
-        margin: 0;
-        padding: 0;
-        padding-left: 3rem;
-               
-    }
-
-    .div__organizacao__blocos__inf{
-
-        gap: 23vh;
-
-    }
-
-    #texto__preco{
-        font-size: 4vh;
-
-    }
-    
-
-
-}
-
-@media (max-width:500px){
-
-    .div__organizacao__blocos__sup{
-
-        flex-direction: column;
-        gap: 9vh;
-    }
-
-    .div__organizacao__blocos__inf{
-        flex-direction: column;
-        gap:9vh;
+        
         
     }
 
-    #titulo__porque{
-        text-align: center;
-        font-size: 4vh;
-        
-
+    #wcpsemfundo{
+        display: none;
 
     }
-
-    #texto__porque__esquerda{
-        font-size: 2.5vh;
-        width: 20vh;
-        
-
-    }
-    
-    .div__porque__direita{
-        padding-top: 7vh;
-        padding-bottom: 5vh;
-    }
-
-   .todas__asLegendas{
-    width: 0;
-   }
-
-   .div__feedbacks__blocos{
-    flex-direction: column;
-
-   }
-
-    #texto__preco{
-        font-size: 2vh;
-
-    }
-
-    .div_juncao_colunas{
-        flex-direction: column;
-    }
-
-    .segunda_coluna_infos{
-        text-align: center;
-    }
-
-     .terceira_coluna_infos{
-        text-align: center;
-    }
-
-   
-
-
 
 }
 

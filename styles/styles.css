@@ -1037,32 +1037,9 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 480px) {
 
-    .engloba_dois{
-         background-image: url("../assets/fundoOndinhasCElular.png");
-         background-size: contain; /* mostra a imagem inteira */
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: black; /* fundo de segurança */
-
-
-    }
+    
 
 
     .cabecalho__conteudo{
