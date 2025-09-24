@@ -316,7 +316,7 @@ header{
 
 
 .engloba{
-    background-image: url("../assets/asfalto.png"); /* caminho da imagem */
+    background-image: url("../assets/pinos.png"); /* caminho da imagem */
     background-size: cover;      /* cobre todo o espaço */
     background-position: center; /* centraliza a imagem */
     background-repeat: no-repeat;/* impede repetição */
