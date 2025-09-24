@@ -1053,6 +1053,14 @@ header{
 
 
 @media (max-width: 480px) {
+
+    .engloba_dois{
+         background-image: url("../assets/fundoOndinhasCElular.png");
+
+
+    }
+
+
     .cabecalho__conteudo{
         flex-direction: column;
         align-items: center;
