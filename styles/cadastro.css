@@ -9,258 +9,286 @@
 body {
   background-image: url("../assets/geograficoAzul.png");
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2vh;
 }
 
 .org__blocos {
   display: flex;
-  width: 150vh;
-  z-index: -1;
+  width: 120vh; /* Reduzir de 150vh para 120vh */
+  max-width: 1200px; /* Limite máximo */
+  height: 70vh; /* Altura fixa para melhor proporção */
   overflow: hidden;
- box-shadow: 0 0 25px rgb(14, 13, 13);
+  box-shadow: 0 0 30px rgba(14, 13, 13, 0.6);
   background: #0a0a0a;
-  border-radius: 3vh;
-  margin: 2vh;
+  border-radius: 2vh;
 }
 
-/* BLOCO ESQUERDA */
+/* BLOCO ESQUERDA - CORRIGIDO */
 .bloco__esquerda {
-  flex: 1;
-  background: #080844;
+  flex: 0.8; /* REDUZIR de 1 para 0.8 */
+  background: linear-gradient(135deg, #080844, #0a0a5e);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5vh;
+  padding: 4vh 3vh; /* Reduzir padding */
   text-align: center;
-  border-radius: 3vh;
-  box-shadow: 0 0 25px rgb(36, 34, 34);
-  z-index: 1;
-  
+  border-radius: 2vh 0 0 2vh; /* Apenas bordas esquerdas arredondadas */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
-.academy{
-    width: 20vh;
-    line-height: 0;
-    
+.academy {
+  width: 18vh; /* Reduzir de 20vh */
+  margin-bottom: 2vh;
 }
 
 .bloco__esquerda h1 {
-    
-  margin-bottom: 1vh;
-  font-size: 2rem;
-  
+  margin-bottom: 1.5vh;
+  font-size: 1.8rem; /* Reduzir fonte */
+  font-weight: 600;
+  line-height: 1.2;
 }
-
-
 
 .bloco__esquerda p {
-  margin-bottom: 2vh;
-  font-size: 0.9rem;
+  margin-bottom: 3vh;
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.4;
 }
 
-.div__botao__esq{
-    border: 2px solid rgba(255, 255, 255, 0.555);
-    box-shadow: 0 0 25px rgb(37, 36, 36);
-    padding: 1vh 15vh;
-    transition:transform 0.3s ease-in-out;
-    border-radius: 2vh;
-    text-decoration: none;
-    color: white;
+.div__botao__esq {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5vh 4vh; /* Ajustar padding */
+  transition: all 0.3s ease-in-out;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.div__botao__esq:hover{
-    transform: scale(1.1);
+.div__botao__esq:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
-
+/* BLOCO DIREITA - CORRIGIDO */
 .bloco__direita {
-  flex: 1.6;
-  background: #0a0a0a;
+  flex: 1.2; /* AUMENTAR de 1.6 para 1.2 */
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
-  padding: 20vh 5vh;           
+  justify-content: center;
+  align-items: center;
+  padding: 4vh; /* Reduzir padding */
+  border-radius: 0 2vh 2vh 0; /* Apenas bordas direitas arredondadas */
+  position: relative;
 }
 
 #titulo__conta {
-  color: rgb(34, 36, 146);
-  font-size: 4rem;
-  margin-bottom: 2vh; 
-  margin-top: 0;     
-   text-shadow:
-    1px 1px 2px black,
-    0 0 0.2em rgb(19, 19, 133); 
+  color: rgb(70, 80, 220);
+  font-size: 3.5rem; /* Reduzir de 4rem */
+  margin-bottom: 2vh;
+  font-weight: 700;
+  text-shadow:
+    2px 2px 4px black,
+    0 0 10px rgba(70, 80, 220, 0.5);
+  text-align: center;
+  line-height: 1;
 }
 
 #div__logins {
   display: flex;
   gap: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 2vh;
+  justify-content: center;
 }
 
 #icons {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  color: #fff;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #icons:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  background: rgba(70, 80, 220, 0.2);
+  border-color: rgb(70, 80, 220);
 }
 
 #texto {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 3vh;
   color: #ccc;
+  text-align: center;
 }
 
-form {
+#formCadastro {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  gap: 2vh;
   width: 100%;
-  
+  max-width: 400px; /* Limite de largura */
 }
 
 .input_email,
 .input_senha {
-  background: rgb(227, 246, 255);
+  background: rgba(227, 246, 255, 0.95);
   border: none;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 14px;
-  width: 50vh;
-  box-shadow: 0 0 25px rgb(37, 36, 36);
+  border-radius: 12px;
+  padding: 15px 20px;
+  font-size: 16px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.input_email:focus,
+.input_senha:focus {
+  outline: none;
+  box-shadow: 0 4px 20px rgba(70, 80, 220, 0.3);
+  transform: translateY(-2px);
 }
 
 .botao {
-  background: none;
+  background: linear-gradient(135deg, rgb(70, 80, 220), rgb(50, 60, 200));
   color: white;
-  margin-top: 1vh;
-  padding: 1vh 15vh;
-  transition: trasnform 0.2s  ease-in-out;
+  padding: 15px 30px;
+  transition: all 0.3s ease-in-out;
   border: none;
-  border: 2px solid white;
   cursor: pointer;
-  border-radius: 2vh;
-  box-shadow: 0 0 25px rgb(49, 48, 48);
-  
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(70, 80, 220, 0.4);
 }
 
 .botao:hover {
-  transform: scale(1.03);
-  background-color: rgb(34, 36, 146);
-  border: none;
-  
-  
-  
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(70, 80, 220, 0.6);
+  background: linear-gradient(135deg, rgb(80, 90, 230), rgb(60, 70, 210));
 }
-
-#formCadastro{
-    display: flex;
-    align-items: center;
-    gap:2vh;
-}
-
-
 
 /* MEDIA QUERY PARA MOBILE (480px) */
 @media (max-width: 480px) {
   body {
+    margin: 0;
+    padding: 15px;
+    background-attachment: scroll;
     align-items: center;
     justify-content: center;
-    max-width: 100vh;
-   
-    
   }
 
   .org__blocos {
     flex-direction: column;
-    width: 100vh;
-    max-width: 480px;
-    min-height: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 80vh;
     border-radius: 2vh;
   }
 
-  /* BLOCO ESQUERDA NO MOBILE */
   .bloco__esquerda {
-    padding: 3vh 2vh;
+    flex: none;
+    padding: 4vh 3vh;
     border-radius: 2vh 2vh 0 0;
+    min-height: 300px;
   }
 
   .academy {
-    width: 12vh;
+    width: 15vh;
+    margin-bottom: 2vh;
   }
 
   .bloco__esquerda h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1vh;
+    font-size: 1.8rem;
+    margin-bottom: 1.5vh;
+    line-height: 1.2;
   }
 
   .bloco__esquerda p {
-    font-size: 0.8rem;
-    margin-bottom: 2vh;
+    font-size: 1rem;
+    margin-bottom: 3vh;
+    line-height: 1.4;
   }
 
   .div__botao__esq {
-    padding: 1vh 8vh;
-    font-size: 0.9rem;
+    padding: 1.5vh 6vh;
+    font-size: 1rem;
   }
 
-  /* BLOCO DIREITA NO MOBILE */
   .bloco__direita {
-    padding: 3vh 2vh;
+    flex: none;
+    padding: 4vh 3vh;
     border-radius: 0 0 2vh 2vh;
+    min-height: 500px;
   }
 
   #titulo__conta {
-    font-size: 2.5rem;
-    margin-bottom: 2vh;
+    font-size: 2.8rem;
+    margin-bottom: 3vh;
     text-align: center;
+    line-height: 1.1;
   }
 
   #div__logins {
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
+    justify-content: center;
   }
 
   #icons {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding: 15px;
   }
 
   #texto {
-    font-size: 11px;
-    margin-bottom: 2vh;
+    font-size: 14px;
+    margin-bottom: 3vh;
     text-align: center;
+    line-height: 1.4;
   }
 
   #formCadastro {
     width: 100%;
-    align-items: stretch;
-    gap: 1.5vh;
+    max-width: none;
+    gap: 2vh;
   }
 
   .input_email,
   .input_senha {
-    width: 100%;
-    padding: 15px 12px;
-    font-size: 16px; /* Para evitar zoom no iOS */
+    padding: 18px 15px;
+    font-size: 16px;
+    border-radius: 12px;
   }
 
   .botao {
-    width: 100%;
-    padding: 15px;
-    font-size: 1rem;
+    padding: 18px;
+    font-size: 1.1rem;
     margin-top: 1vh;
   }
 }
