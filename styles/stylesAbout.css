@@ -54,13 +54,16 @@ body{
      
 }
 
+.engloba{
+    background: rgb(0, 0, 0);
+}
 
 
 .paginainterna{
     max-width: 2000px;
     margin: 0 auto;
     padding-top:5vh;
-     background: rgb(0, 0, 0);
+     
      
     
      
@@ -87,10 +90,6 @@ header{
     
 }
 
-main{
-    margin: 3vh;
-
-}
 
 
 
@@ -190,120 +189,48 @@ strong{
 
 
 /*Main começa aqui*/
-.organizacao{
-    display: flex;
-    justify-content: center;
-    padding-bottom:10vh;
-    padding-top:10vh;
-    
-    
 
-}
-
-.juncao__blocos{
+main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 95%;
-    
-   
+    justify-content: center;
+    color:rgb(204, 196, 196);
 }
 
-.titulo{
-    font-size: 6vh;
-    text-shadow: 5px 5px 5px rgb(15, 25, 128);
-    color: rgb(201, 202, 214);
-    
-    
 
-}
-
-.texto__um{
-    color: rgb(149, 149, 150);
-    font-size: 2.5vh;
-    width: 120vh;
-    text-shadow:  2px 2px 5px rgb(75, 72, 72);
-
-
-}
-
-.texto__dois{
-    color: rgb(149, 149, 150);
-    font-size: 2.5vh;
-    width: 120vh;
-    text-shadow:  2px 2px 5px rgb(75, 72, 72);
-
-}
-
-.texto__tres{
-    color: rgb(149, 149, 150);
-    font-size: 2.5vh;
-    width: 120vh;
-    padding-bottom: 5vh;
-    text-shadow:  2px 2px 5px rgb(75, 72, 72);
-
-}
-
-.bloco__grande{
+.blocoGrande{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    background: linear-gradient(192deg , rgb(24, 37, 156), rgb(0, 0, 0),rgb(11, 25, 150));
-   animation: moverGradient 10s ease
-   infinite;
-    background-size: 300% 300%;    
-    width: 170vh;
-    border-radius: 3vh ;
-    padding-bottom: 5vh;
-    box-shadow: 0 0 18px rgb(87, 87, 87);
-    
-    
-}
-
-
-.bloco__pequeno{
-
-    background: linear-gradient(132deg , rgb(24, 37, 156), rgb(0, 0, 0),rgb(24, 37, 156));
+    max-width: 500vh;
+    background: linear-gradient(135deg, #232A72, #181717,#232A72,#232A72);
     background-size: 300% 300%;
-    animation: moverGradient 10s ease infinite;
-    max-width: 100%;
-    border-radius:3vh;
-    padding-bottom: 5vh;
-    box-shadow: 0 0 10px rgb(241, 241, 241);
+    animation: moverGradient 17s ease infinite; 
+    padding: 5vh;
+    margin-top: 5vh;
+    margin-bottom:5vh;
+    border-radius: 2vh;
     
-    text-align: center;
-    
-}
-
-.subtitulo{
-    color: aliceblue;
-    font-size:4.5vh;
-    text-shadow:  2px 2px 5px rgb(75, 72, 72);
-}
-
-.textinho__um{
-color: rgb(149, 149, 150);
-
-}
-
-.textinho__dois{
-color: rgb(149, 149, 150);
     
 }
 
-span{
-    color:white
+.blocoPequeno{
+
+    background: linear-gradient(90deg, #232A72, #181717,#232A72,#232A72);
+    background-size: 300% 300%;
+    animation: moverGradient 17s ease infinite;
+    max-width: 70vh;
+    padding: 2vh;
+    border-radius: 2vh;
+
 }
 
-.textinho__tres{
 
-   color: rgb(149, 149, 150);
-}
 
-.textinho__quatro{
 
-   color: rgb(149, 149, 150);
-}
+
 /*Rodape começa aqui*/
 
 .rodape{
