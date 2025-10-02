@@ -13,7 +13,13 @@
 /**/
 
 
+p{
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.41);
+}
 
+h2{
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.41);
+}
 
 html, body {
   overflow-x: hidden;
@@ -44,6 +50,7 @@ body, p, li {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 body{
@@ -103,6 +110,7 @@ strong{
 .cabecalho_conteudo_imagem{
     width: 15vh;
     
+    
 
 }
 
@@ -132,7 +140,7 @@ strong{
     width: 70vh;
    margin: 20px;
     text-align: center;
-    padding-left: 2.8vh;
+    
     
     
 }
@@ -205,12 +213,14 @@ main{
     align-items: center;
     text-align: center;
     max-width: 500vh;
-    background: linear-gradient(135deg, #232A72, #181717,#232A72,#232A72);
+    background: linear-gradient(135deg, #1A237E, #0d1644, #25316b);
     background-size: 300% 300%;
     animation: moverGradient 17s ease infinite; 
     padding: 5vh;
     margin-top: 5vh;
     margin-bottom:5vh;
+    margin-right:5vh;
+    margin-left: 5vh;
     border-radius: 2vh;
     
     
@@ -218,12 +228,14 @@ main{
 
 .blocoPequeno{
 
-    background: linear-gradient(90deg, #232A72, #181717,#232A72,#232A72);
+    background: linear-gradient(90deg,  #25316b,#0d1644,#1A237E);
     background-size: 300% 300%;
     animation: moverGradient 17s ease infinite;
     max-width: 70vh;
     padding: 2vh;
     border-radius: 2vh;
+    box-shadow: 9px 10px 5px 0px rgba(3, 3, 3, 0.705);
+
 
 }
 
@@ -270,7 +282,7 @@ main{
     margin: 0 auto; /* centraliza o texto */
     padding: 20px;
     text-align: justify; /* (opcional) justifica o texto */
-     font-family: "Poppins", sans-serif; ;
+    font-family: "Poppins", sans-serif; ;
 }
 
 .rodape_conteudo_icones{
@@ -418,15 +430,13 @@ main{
 
 @media (max-width:480px){
 
-    main{
-        margin: 2vh;
-
-    }
+    
 
     .cabecalho__conteudo{
 
         flex-direction: column;
         align-items: center;
+        
         
         
 
@@ -443,5 +453,64 @@ main{
 
     }
 
+     .div_juncao_colunas{
+        flex-direction: column;
+        align-items: center;
+
+     }
+     .primeira_coluna_infos{
+        display: flex;
+        text-align: center;
+        align-items: center;
+     }
+     .segunda_coluna_infos{
+        display: flex;
+        text-align: center;
+     }
+     .terceira_coluna_infos{
+        display: flex;
+        text-align: center;
+     }
+
+     #contato2{
+        padding: 0 ;
+     }
+
+     #contato{
+        padding: 0 ;
+     }
+
+     #sobrenos.titulos{
+        padding:0;
+
+     }
+
+     #atendimento.titulos{
+        padding:0;
+     }
+
+     #servicos.titulos{
+        padding: 0;
+     }
+    
+    
 }
+
+
+ @media (min-width: 769px) and (max-width: 1024px){
+
+    .cabecalho__conteudo{
+        flex-direction: column;
+
+    }
+
+    #wcpsemfundo{
+        display: none;
+    }
+
+    #cabecalho_conteudo_paginas{
+        flex-direction: column;
+    }
+    
+ }
 
