@@ -63,7 +63,7 @@ body{
 
 .engloba{
     background: rgb(0, 0, 0);
-    overflow-x: hidden;
+   
     
 }
 
@@ -72,9 +72,7 @@ body{
     max-width: 2000px;
     margin: 0 auto;
     padding-top:5vh;
-    background: rgb(0, 0, 0);
-    overflow-x: hidden;
-
+    
      
      
     
@@ -244,7 +242,59 @@ main{
 
 }
 
+/*Main da Lia*/
 
+.tituloLia{
+    font-size: 3rem;
+    color: rgb(5, 80, 151);
+    margin:1vh;
+
+}
+
+.textoLia{
+    font-size:1.5rem;
+    line-height: 0;
+    
+    margin-bottom: 9vh  ;
+    margin-top: 1vh;
+    word-wrap: break-word;
+
+}
+
+.liaimagem{
+    width: 50vh;
+    border-radius:6vh;
+    
+}
+
+.compartimento_beneficios{
+
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    font-size: 2vh;
+    
+
+
+}
+
+.botaoWhats{
+    padding: 2vh;
+    border: 2px solid green;
+    margin-top: 5vh;
+     margin-bottom: 5vh;
+    text-decoration:none;
+    color: green;
+    font-size: 18px;
+    border-radius:2vh;
+    transition: transform ease-in-out 0.3s 
+
+}
+
+.botaoWhats:hover{
+    transform:scale(1.2)
+
+}
 
 
 
