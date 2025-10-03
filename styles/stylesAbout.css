@@ -63,7 +63,7 @@ body{
 
 .engloba{
     background: rgb(0, 0, 0);
-    overflow-x: hidden;
+    
 }
 
 
@@ -71,6 +71,8 @@ body{
     max-width: 2000px;
     margin: 0 auto;
     padding-top:5vh;
+    background: rgb(0, 0, 0);
+
      
      
     
