@@ -139,11 +139,10 @@ strong{
     display: flex;
     flex-direction: row;
     gap: 90px;
-    list-style: none;  
     width: 70vh;
-   margin: 20px;
+    margin: 20px;
     text-align: center;
-    
+    justify-content: center;
     
     
 }
@@ -552,7 +551,7 @@ main{
 }
 
 
- @media (min-width: 769px) and (max-width: 1024px){
+ @media (min-width: 768px) and (max-width: 1024px){
 
     .cabecalho__conteudo{
         flex-direction: column;
@@ -564,7 +563,7 @@ main{
     }
 
     #cabecalho_conteudo_paginas{
-        flex-direction: column;
+        gap:60px
     }
     
  }
