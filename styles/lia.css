@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+p {
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.41);
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+body, p, li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.engloba {
+    background: rgb(0, 0, 0);
+}
+
+.paginainterna {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+@keyframes moverGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    display: center;
+    align-items: center;
+}
+
+strong {
+    color: rgb(255, 255, 255);
+}
+
+/*Cabecalho*/
+
+.cabecalho_conteudo_imagem {
+    width: 15vh;
+}
+
+.cabecalho__conteudo {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgb(58, 58, 58);
+}
+
+#cabecalho_conteudo_paginas {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    width: 70vh;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.cabecalho_conteudo_links {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 3vh;
+    text-shadow: 2px 2px 5px rgb(151, 147, 147);
+}
+
+.cabecalho_conteudo_links:hover {
+    color: #79797e;
+    transform: scale(1.10);
+    text-shadow: 2px 2px 5px rgb(76, 88, 92);
+}
+
+#quemsomos {
+    width: 18vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(204, 196, 196);
+    text-align: center;
+}
+/*Main */
+.tituloLia {
+    font-size: 3rem;
+    color: rgb(5, 80, 151);
+    margin: 1vh;
+    text-align: center;
+}
+
+.textoLia {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 9vh;
+    margin-top: 1vh;
+    
+}
+
+.liaimagem {
+    width: 50vh;
+    border-radius: 6vh;
+}
+
+.compartimento_beneficios {
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    font-size: 2vh;
+    
+   
+}
+
+.botaoWhats {
+    padding: 2vh;
+    border: 2px solid green;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    border-radius: 2vh;
+    transition: transform ease-in-out 0.3s;
+}
+
+.botaoWhats:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+    .cabecalho__conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cabecalho_conteudo_paginas {
+        flex-direction: column;
+    }
+
+    #wcpsemfundo {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cabecalho__conteudo {
+        flex-direction: column;
+    }
+
+    #wcpsemfundo {
+        display: none;
+    }
+
+    #cabecalho_conteudo_paginas {
+        gap: 60px;
+    }
+}
